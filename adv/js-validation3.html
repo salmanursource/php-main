@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script>
+    function validate() {
+      var num = document.myform.num.value;
+
+      if (num == "") {
+        document.getElementById("num-error").innerHTML = "Number can't be blank";
+        return false;
+      }
+
+      if (isNaN(num)) {
+        document.getElementById("num-error").innerHTML = "Enter Numeric value only";
+        return false;
+      } else {
+        return true;
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #num-error {
+      color: rgb(150, 21, 21);
+      font-size:12px;
+    }
+  </style>
+</head>
+
+<body>
+  <form name="myform" onsubmit="return validate()">
+    Number: <input type="text" name="num">
+    &nbsp;&nbsp;
+    <span id="num-error"></span><br />
+    <input type="submit" value="submit">
+  </form>
+</body>
+
+</html>
