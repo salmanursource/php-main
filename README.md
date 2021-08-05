@@ -25,8 +25,8 @@ Two of the easiest languages to learn are JavaScript and PHP. Even a few lines o
 
 ## What you will need:
 
-A computer
-A way to render PHP files.
+* A computer
+* A way to render PHP files.
 
 
 # Sections
